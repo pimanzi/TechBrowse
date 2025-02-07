@@ -66,7 +66,7 @@ class Screen extends StatelessWidget {
                   Text(
                     title2,
                     style: const TextStyle(
-                       // commit-second fontSize: 20, fontWeight: FontWeight.bold),
+                       fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 40),
                   Padding(
