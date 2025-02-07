@@ -66,7 +66,18 @@ class ProductCard extends StatelessWidget {
                ),
              ),
            ),
-  
+                    Expanded(
+             child: Padding(
+               padding: EdgeInsets.fromLTRB(0, 0, 7, 0),
+               child: Column(
+                 crossAxisAlignment: CrossAxisAlignment.start,
+                 children: [
+                   Padding(
+                     padding: EdgeInsets.fromLTRB(80, 5, 0, 0),
+                     child: Text(
+                       title2,
+                       style: const TextStyle(
+                           fontSize: 16, fontWeight: FontWeight.bold),
            ),
                    ),
                    Padding(
