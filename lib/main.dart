@@ -1,1 +1,9 @@
+import 'package:flutter/material.dart';
+import "package:techbrowse/product_navigation.dart";
+
+
+void main() {
+ runApp(MaterialApp(
+     debugShowCheckedModeBanner: false, home: ProductNavigation()));
+}
 
