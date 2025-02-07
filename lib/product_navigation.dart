@@ -46,3 +46,35 @@ class ProductNavigation extends StatelessWidget {
       "color": Color(0xFF3cbcac),
     },
   ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        title: const Text(
+          "Product Navigation",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.blue,
+      ),
+      body: ListView.builder(
+        itemCount: productInfo.length,
+        itemBuilder: (context, index) {
+          final product = productInfo[index];
+          return Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 6),
+            child: ProductCard(
+                title: product["title"],
+                title2: product["title2"],
+                description: product["description"],
+                price: product["price"],
+                color: product["color"],
+                fillStar: product["fillStar"]),
+          );
+        },
+      ),
+    );
+  }
+}
+
